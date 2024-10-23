@@ -12,15 +12,17 @@ Welcome to Movie Review API Application. This API manages CRUD opertions. Below 
 -   composer
 
 ### Installation
-
+-   edit "in php.ini file and uncomment ;extension=sodium"
 -   run "composer install"
 -    "edit .env according to requirement - (datasection, mail..)"
 
 ### Set up for laraval passport authenticator
 
--   run "php artisan migrate"
--   run "php artisan dbc:seed "
+
 -   run "php artisan passport:keys "
+-   php artisan db:seed --class=AdminSeeder
+-   php artisan db:seed --class=MovieSeeder
+-   php artisan db:seed --class=ReviewSeeder 
 
  ### Admin Details
  -   admin@gmail.com
